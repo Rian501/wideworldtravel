@@ -1,3 +1,5 @@
+'use strict';
+
 myApp.controller("BookController", function($scope, BookFactory) {
 	BookFactory.getBooks()
 	.then( (booksData) => {
